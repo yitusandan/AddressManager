@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/my_action_bar" />
+
+    <EditText
+        android:id="@+id/et_username"
+        style="@style/edit_text_address"
+        android:layout_marginTop="18.5dp"
+        android:hint="收货人姓名" />
+
+    <EditText
+        android:id="@+id/et_mobile_no"
+        android:inputType="number"
+        android:maxLength="11"
+        style="@style/edit_text_address"
+        android:hint="手机号码" />
+
+    <EditText 
+        android:id="@+id/et_area"
+        style="@style/edit_text_address"
+        android:hint="省、市、区"/>
+    
+    <EditText 
+        android:id="@+id/et_street"
+        style="@style/edit_text_address"
+        android:hint="街道"/>
+    
+    <EditText 
+        android:id="@+id/et_detail"
+        style="@style/edit_text_address"
+        android:hint="详细地址"/>
+</LinearLayout>
